@@ -31,6 +31,31 @@ How to use PHPUnit, Mockery, and Laravel’s dependency injection to mock and ha
 by Orkhan Ahmadov
 
 ---
+
+# About me
+
+Name is Orkhan, Genghis Khan. But not to confuse with Orkan, which means hurricane in German.
+
+<br>
+
+- Director of Product Development and Tech Team lead at AirLST GmbH.
+- Love to work with Laravel, Vue.js. Big time testing advocate.
+- Runner, hiker, Mountain biker
+- Licensed drone pilot and hobbyist drone racer/photographer
+- Amateur photographer
+- Gym rat
+
+<br>
+
+You can find me blogging (almost) weekly at [orkhan.dev](https://orkhan.dev) about all things tech, Laravel, Vue.js, and testing related.
+
+---
+layout: center
+---
+
+# Coding time!
+
+---
 layout: center
 ---
 
