@@ -1,6 +1,6 @@
 <?php
 
-namespace Feature\Http\Controllers;
+namespace Tests\Feature\Http\Controllers;
 
 use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Facades\Storage;
