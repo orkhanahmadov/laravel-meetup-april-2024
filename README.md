@@ -1,3 +1,7 @@
 # Laravel Munich Meetup April 2024
 
-For slides, take a look at the [slides](slides/README.md).
+To take a look at slides, run:
+
+```shell
+cd slides && yarn install && yarn run dev
+```
