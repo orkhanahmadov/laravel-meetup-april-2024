@@ -2,16 +2,15 @@
 
 namespace App\Http\Controllers;
 
+use App\Services\Stripe;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
-use Stripe\StripeClient;
 
 class CreateStripeCustomerController
 {
-    public function __invoke(Request $request): JsonResponse
+    public function __invoke(Request $request, Stripe $stripe): JsonResponse
     {
-        $stripe = new StripeClient('secret-key');
-        $customer = $stripe->customers->create([
+        $customer = $stripe->createCustomer([
             'email' => $request->input('email'),
         ]);
 

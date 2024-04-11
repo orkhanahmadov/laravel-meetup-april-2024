@@ -10,9 +10,9 @@ use Symfony\Component\HttpFoundation\Response;
 
 class RegistrationPageController
 {
-    public function __invoke(): View
+    public function __invoke(Application $app): View
     {
-        if (app()->environment('staging')) {
+        if ($app->environment('staging')) {
             abort(Response::HTTP_FORBIDDEN, 'Registration is disabled in staging environment');
         }
 

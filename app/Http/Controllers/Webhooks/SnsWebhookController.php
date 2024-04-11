@@ -10,10 +10,9 @@ use Illuminate\Http\Response;
 
 class SnsWebhookController
 {
-    public function __invoke(Request $request): Response
+    public function __invoke(Request $request, MessageValidator $validator): Response
     {
         try {
-            $validator = new MessageValidator();
             $validator->validate(new Message($request->json()->all()));
         } catch (InvalidSnsMessageException) {
             abort(Response::HTTP_BAD_REQUEST);
